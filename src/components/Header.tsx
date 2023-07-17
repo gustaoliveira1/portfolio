@@ -4,7 +4,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 export function Header() {
   return (
-    <header className="flex justify-between p-3 bg-white w-full shadow-sm items-center">
+    <header className="flex justify-between p-3 bg-white w-full shadow items-center fixed top-0 left-0 z-50">
       <div className="flex gap-2 items-center">
         <LinkSocialIcon
           icon={Github}
