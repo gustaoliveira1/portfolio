@@ -11,7 +11,7 @@ module.exports = {
         primary: '#F8FFE5',
         secondary: '#F25757',
         tertiary: '#4E4187',
-        tertiary: '#7798AB',
+        quaternary: '#7798AB',
       }
     },
   },
