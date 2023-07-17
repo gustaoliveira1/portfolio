@@ -7,7 +7,7 @@ import { pageTypes } from "@/types/pagesTypes";
 export function HeaderNav() {
   const { page, setPage } = useCurrentPage();
 
-  const handleChangePage = (value: pageTypes) => setPage(value) 
+  const handleChangePage = (value: pageTypes) => setPage(value);
 
   return (
     <nav className="flex gap-6 items-center">
