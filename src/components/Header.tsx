@@ -14,7 +14,7 @@ export function Header() {
           icon={Linkedin}
           link="https://www.linkedin.com/in/gustavo-oliveira-araujo-b552b0266/"
         />
-        <LinkSocialIcon icon={Mail} link="mailto:gusta01.oliveira@gmail.com" />
+        <LinkSocialIcon icon={Mail} link="mailto:gusta01.oliveira@gmail.com?subject=Oferta de trabalho" />
       </div>
       <HeaderNav />
     </header>
