@@ -9,7 +9,9 @@ export function Projects() {
   return (
     <section className="min-h-screen">
       <div className="w-full max-w-[1216px] mx-auto p-6 pt-20">
-        <h2 className="text-secondary text-4xl font-semibold text-center mb-20">Projetos</h2>
+        <h2 className="text-secondary text-4xl font-semibold text-center mb-20">
+          Projetos
+        </h2>
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <ProjectPattern
             title="Gelateria"

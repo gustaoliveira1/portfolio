@@ -15,7 +15,6 @@ export function ProjectPattern({
   smartphoneImage,
   tabletImage,
 }: ProjectPatternProps) {
-
   const technologiesToString = () => {
     let techString = "";
 
@@ -48,13 +47,13 @@ export function ProjectPattern({
 
         {/*Project texts*/}
       </div>
-        <div className="space-y-5 mt-10 max-w-md">
-          <h3 className="uppercase font-semibold text-2xl tracking-tight">
-            {title}
-          </h3>
-          <p className="text-black/80">{description}</p>
-          <p className=" text-secondary">{technologiesToString()}</p>
-        </div>
+      <div className="space-y-5 mt-10 max-w-md">
+        <h3 className="uppercase font-semibold text-2xl tracking-tight">
+          {title}
+        </h3>
+        <p className="text-black/80">{description}</p>
+        <p className=" text-secondary">{technologiesToString()}</p>
+      </div>
     </div>
   );
 }

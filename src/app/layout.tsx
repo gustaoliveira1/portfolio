@@ -9,8 +9,10 @@ import { Footer } from "@/components/Footer";
 const openSans = OpenSans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Gustavo Oliveira Araujo | Desenvolvedor Fullstack Web & Designer de UX",
-  description: "Sou um desenvolvedor Fullstack web e designer de UX apaixonado por transformar ideias em realidade. Confira meu portfólio para ver como crio interfaces intuitivas e funcionais, combinando habilidades de codificação e design.",
+  title:
+    "Gustavo Oliveira Araujo | Desenvolvedor Fullstack Web & Designer de UX",
+  description:
+    "Sou um desenvolvedor Fullstack web e designer de UX apaixonado por transformar ideias em realidade. Confira meu portfólio para ver como crio interfaces intuitivas e funcionais, combinando habilidades de codificação e design.",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
