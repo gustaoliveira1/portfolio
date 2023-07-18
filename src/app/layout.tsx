@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Open_Sans as OpenSans } from "next/font/google";
 import { CurrentPageProvider } from "@/contexts/CurrentPage";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 const openSans = OpenSans({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <CurrentPageProvider>
           <Header />
           {children}
+          <Footer />
         </CurrentPageProvider>
       </body>
     </html>
