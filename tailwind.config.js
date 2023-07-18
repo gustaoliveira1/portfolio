@@ -12,7 +12,10 @@ module.exports = {
         secondary: '#F25757',
         tertiary: '#4E4187',
         quaternary: '#7798AB',
-      }
+      },
+      screens: {
+        'xm': '425px', 
+      },
     },
   },
   plugins: [],
