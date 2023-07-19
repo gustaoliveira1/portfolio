@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-br">
-      <body className={`${openSans.className} bg-primary`}>
+      <body className={`${openSans.className} bg-tertiary/20`}>
         <CurrentPageProvider>
           <Header />
           {children}
