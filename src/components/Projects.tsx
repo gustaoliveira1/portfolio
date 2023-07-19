@@ -25,22 +25,22 @@ export function Projects() {
             tabletImage={gelateriaTablet}
           />
           <ProjectPattern
-            title="Jogo da velha"
-            description="Um simples jogo da velha para se divertir com os amigos!"
-            technologies={["React", "Next", "Typescript", "TailwindCss"]}
+            title="Agência de viagens"
+            description="Procure suas viagens de forma simples e intuitiva!"
+            technologies={["HTML", "CSS", "Javascript"]}
             smartphoneImage={agenciaSmartphone}
             tabletImage={agenciaTablet}
           />
           <ProjectPattern
-            title="Gelateria"
-            description="Landing page criada para exibir os deliciosos sorvetes artesanais da tradicional Gelateria."
-            technologies={["React", "Javascript", "CSS"]}
+            title="Hospedagem Alphatech"
+            description="Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa de lentidão na sua hospedagem."
+            technologies={["HTML", "Javascript", "CSS"]}
             smartphoneImage={alphatechSmartphone}
             tabletImage={alphatechTablet}
           />
           <ProjectPattern
-            title="Jogo da velha"
-            description="Um simples jogo da velha para se divertir com os amigos!"
+            title="Clínica Médica Life"
+            description="Nossa clínica está pronta para receber nossos pacientes através de uma excelente estrutura, comodidade e com a segurança de que você precisam."
             technologies={["React", "Next", "Typescript", "TailwindCss"]}
             smartphoneImage={cmlifeSmartphone}
             tabletImage={cmlifeTablet}
