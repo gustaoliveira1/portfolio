@@ -37,11 +37,11 @@ export function ProjectPattern({
 
         {/*Smartphone Device*/}
         <div className=" sm:h-[360px]  sm:max-w-[200px] h-[240px] max-w-[150px] absolute rounded-2xl bg-tertiary p-2 shadow-md bottom-[5%] right-[-25%]">
-          <div className="w-1/5 h-2 bg-tertiary absolute rounded-full z-10 top-4 left-1/2 -translate-x-1/2" />
+          <div className="w-1/5 h-2 bg-tertiary absolute rounded-full z-10 overflow-hidden left-1/2 -translate-x-1/2" />
           <Image
             src={smartphoneImage}
             alt=""
-            className="rounded-2xl h-full w-full"
+            className="rounded-2xl h-full w-full object-cover top-1/2 left-1/2"
           />
         </div>
 
