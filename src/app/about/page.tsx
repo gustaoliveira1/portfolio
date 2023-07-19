@@ -1,9 +1,11 @@
+import Balance from "react-wrap-balancer";
+
 export default function Page() {
   return (
     <main className="min-h-full">
       <div className="max-w-[786px] mx-auto p-6 pt-20">
         <h2 className="text-3xl text-secondary font-semibold mb-10 tracking-wide">
-          Olá! Sou o Gusta Oliveira, <br /> Desenvolvedor Web e Designer de UX
+          <Balance>Olá! Sou o Gusta Oliveira, Desenvolvedor Web e Designer de UX</Balance>
         </h2>
         <div className="text-black/80 text-xl space-y-6">
           <p>

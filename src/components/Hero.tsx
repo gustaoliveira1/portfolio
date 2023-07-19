@@ -1,3 +1,4 @@
+import Balance from "react-wrap-balancer";
 import { HeroPattern } from "./HeroPattern";
 
 export function Hero() {
@@ -10,8 +11,10 @@ export function Hero() {
           Desenvolvedor <span className="text-secondary">Fullstack</span>
         </h2>
         <p className="max-w-[510px] text-xl">
-          Desenvolvedor Fullstack e Designer de UX, transformando ideias em
-          incríveis experiêcias digitais.
+          <Balance>
+            Desenvolvedor Fullstack e Designer de UX, transformando ideias em
+            incríveis experiêcias digitais.
+          </Balance>
         </p>
       </div>
       <HeroPattern />
