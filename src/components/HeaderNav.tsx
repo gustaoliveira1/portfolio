@@ -8,9 +8,7 @@ import { useCurrentPage } from "@/hooks/useCurrentPage";
 
 export function HeaderNav() {
   const [isActive, setIsActive] = useState(false);
-  const { page, setPage } = useCurrentPage();
-
-  const handleChangePage = (value: pageTypes) => setPage(value);
+  const { page } = useCurrentPage();
 
   const toggleMenu = () => setIsActive(!isActive);
 
@@ -28,7 +26,6 @@ export function HeaderNav() {
               ? "text-secondary border-b-2 border-secondary"
               : ""
           }
-          onClick={() => handleChangePage(pageTypes.HOME)}
         >
           Home
         </Link>
@@ -39,7 +36,6 @@ export function HeaderNav() {
               ? "text-secondary border-b-2 border-secondary"
               : ""
           }
-          onClick={() => handleChangePage(pageTypes.ABOUT)}
         >
           Sobre mim
         </Link>
@@ -59,10 +55,9 @@ export function HeaderNav() {
             href="/"
             className={
               page === pageTypes.HOME
-                ? "text-secondary border-b-2 border-secondary inline"
+                ? "text-secondary border-b-2 border-secondary max-w-fit"
                 : ""
             }
-            onClick={() => handleChangePage(pageTypes.HOME)}
           >
             Home
           </Link>
@@ -70,10 +65,9 @@ export function HeaderNav() {
             href="/about"
             className={
               page === pageTypes.ABOUT
-                ? "text-secondary border-b-2 border-secondary inline"
+                ? "text-secondary border-b-2 border-secondary max-w-fit"
                 : ""
             }
-            onClick={() => handleChangePage(pageTypes.ABOUT)}
           >
             Sobre mim
           </Link>
