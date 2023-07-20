@@ -20,7 +20,7 @@ export function Hero() {
         </p>
         <Link
           href="/about"
-          className="bg-black text-white font-semibold flex gap-3 z-10 py-2 px-4 max-w-fit rounded-2xl items-center"
+          className="bg-black text-white font-semibold flex gap-3 z-10 py-2 px-4 max-w-fit rounded-3xl items-center"
         >
           Mais sobre mim
           <BiSolidChevronRight />
