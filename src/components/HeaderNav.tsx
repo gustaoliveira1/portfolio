@@ -1,8 +1,8 @@
 "use client";
 
-import { KeyboardEvent, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { FiMenu, FiX } from "react-icons/fi"
 import { pageTypes } from "@/types/pagesTypes";
 import { useCurrentPage } from "@/hooks/useCurrentPage";
 
@@ -17,7 +17,7 @@ export function HeaderNav() {
   return (
     <nav className="flex gap-6 items-center">
       <button onClick={toggleMenu} className="md:hidden">
-        <Menu className="text-2xl" />
+        <FiMenu className="text-2xl" />
       </button>
 
       <div className={`hidden md:flex gap-6 items-center`}>
@@ -53,7 +53,7 @@ export function HeaderNav() {
         <button 
           onClick={toggleMenu}
           className="self-end">
-          <X className="text-2xl" />
+          <FiX className="text-2xl" />
         </button>
 
         <div className="flex flex-col gap-6">
