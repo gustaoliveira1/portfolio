@@ -1,4 +1,6 @@
+import { BiSolidChevronRight } from "react-icons/bi";
 import Balance from "react-wrap-balancer";
+import Link from "next/link";
 import { HeroPattern } from "./HeroPattern";
 
 export function Hero() {
@@ -16,6 +18,13 @@ export function Hero() {
             incríveis experiêcias digitais.
           </Balance>
         </p>
+        <Link
+          href="/about"
+          className="bg-black text-white font-semibold flex gap-3 z-10 py-2 px-4 max-w-fit rounded-2xl items-center"
+        >
+          Mais sobre mim
+          <BiSolidChevronRight />
+        </Link>
       </div>
       <HeroPattern />
     </section>
