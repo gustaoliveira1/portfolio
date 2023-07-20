@@ -1,6 +1,14 @@
+"use client"
+
+import { useCurrentPage } from "@/hooks/useCurrentPage";
+import { pageTypes } from "@/types/pagesTypes";
 import Balance from "react-wrap-balancer";
 
 export default function Page() {
+  const { setPage } = useCurrentPage()
+
+  setPage(pageTypes.ABOUT)
+
   return (
     <main className="min-h-full">
       <div className="max-w-[786px] mx-auto p-6 pt-20">
