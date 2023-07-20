@@ -1,6 +1,6 @@
 import { HeaderNav } from "./HeaderNav";
 import { LinkSocialIcon } from "./LinkSocialIcon";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi"
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 export function Header() {
   return (

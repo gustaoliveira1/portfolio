@@ -4,10 +4,10 @@ import gelateriaTablet from "@/assets/gelateria-talblet.png";
 import gelateriaSmartphone from "@/assets/gelateria-smartphone.png";
 import agenciaTablet from "@/assets/agencia-tablet.png";
 import agenciaSmartphone from "@/assets/agencia-smartphone.png";
-import alphatechTablet from "@/assets/alphatech-tablet.png"
-import alphatechSmartphone from "@/assets/alphatech-smartphone.png"
-import cmlifeTablet from "@/assets/cmlife-tablet.png"
-import cmlifeSmartphone from "@/assets/cmlife-smatphone.png"
+import alphatechTablet from "@/assets/alphatech-tablet.png";
+import alphatechSmartphone from "@/assets/alphatech-smartphone.png";
+import cmlifeTablet from "@/assets/cmlife-tablet.png";
+import cmlifeSmartphone from "@/assets/cmlife-smatphone.png";
 
 export function Projects() {
   return (

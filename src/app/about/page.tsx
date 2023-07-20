@@ -5,7 +5,9 @@ export default function Page() {
     <main className="min-h-full">
       <div className="max-w-[786px] mx-auto p-6 pt-20">
         <h2 className="text-3xl text-secondary font-semibold mb-10 tracking-wide">
-          <Balance>Olá! Sou o Gusta Oliveira, Desenvolvedor Web e Designer de UX</Balance>
+          <Balance>
+            Olá! Sou o Gusta Oliveira, Desenvolvedor Web e Designer de UX
+          </Balance>
         </h2>
         <div className="text-black/80 text-xl space-y-6">
           <p>
