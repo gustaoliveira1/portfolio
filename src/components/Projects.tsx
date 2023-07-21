@@ -19,6 +19,7 @@ export function Projects() {
         <div className="grid lg:grid-cols-2 grid-cols-1">
           <ProjectPattern
             title="Gelateria"
+            link="https://gelateria-gustaoliveira.netlify.app/"
             description="Landing page criada para exibir os deliciosos sorvetes artesanais da tradicional Gelateria."
             technologies={["React", "Javascript", "CSS"]}
             smartphoneImage={gelateriaSmartphone}
@@ -26,13 +27,15 @@ export function Projects() {
           />
           <ProjectPattern
             title="Agência de viagens"
-            description="Procure suas viagens de forma simples e intuitiva!"
+            link="https://gustaoliveira1.github.io/devmedia/front-end/html-css/missao-09/agencia-de-viagens/"
+            description="Procure suas viagens de forma simples e intuitiva, é a sua chance de conhecer lugares incriveis!"
             technologies={["HTML", "CSS", "Javascript"]}
             smartphoneImage={agenciaSmartphone}
             tabletImage={agenciaTablet}
           />
           <ProjectPattern
             title="Hospedagem Alphatech"
+            link="https://gustaoliveira1.github.io/devmedia/front-end/html-css/missao-07/hospedagem-alphatech/"
             description="Obtenha a melhor velocidade para o seu site. Não perca mais clientes por causa de lentidão na sua hospedagem."
             technologies={["HTML", "Javascript", "CSS"]}
             smartphoneImage={alphatechSmartphone}
@@ -40,6 +43,7 @@ export function Projects() {
           />
           <ProjectPattern
             title="Clínica Médica Life"
+            link="https://gustaoliveira1.github.io/devmedia/front-end/html-css/missao-08/cmlife/"
             description="Nossa clínica está pronta para receber nossos pacientes através de uma excelente estrutura, comodidade e com a segurança de que você precisam."
             technologies={["React", "Next", "Typescript", "TailwindCss"]}
             smartphoneImage={cmlifeSmartphone}
