@@ -16,6 +16,15 @@ module.exports = {
       screens: {
         'xm': '425px', 
       },
+      keyframes: {
+        line: {
+          '0%': { width: '0' },
+          '100%': { width: '100%' },
+        }
+      },
+      animation: {
+        underline: 'line 0.3s ease-in-out'
+      },
     },
   },
   plugins: [],

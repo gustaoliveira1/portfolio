@@ -1,23 +1,21 @@
 "use client";
 
-import { KeyboardEvent, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { FiMenu, FiX } from "react-icons/fi";
 import { pageTypes } from "@/types/pagesTypes";
 import { useCurrentPage } from "@/hooks/useCurrentPage";
 
 export function HeaderNav() {
   const [isActive, setIsActive] = useState(false);
-  const { page, setPage } = useCurrentPage();
-
-  const handleChangePage = (value: pageTypes) => setPage(value);
+  const { page } = useCurrentPage();
 
   const toggleMenu = () => setIsActive(!isActive);
-  
+
   return (
     <nav className="flex gap-6 items-center">
       <button onClick={toggleMenu} className="md:hidden">
-        <Menu className="text-2xl" />
+        <FiMenu className="text-2xl" />
       </button>
 
       <div className={`hidden md:flex gap-6 items-center`}>
@@ -28,7 +26,6 @@ export function HeaderNav() {
               ? "text-secondary border-b-2 border-secondary"
               : ""
           }
-          onClick={() => handleChangePage(pageTypes.HOME)}
         >
           Home
         </Link>
@@ -39,7 +36,6 @@ export function HeaderNav() {
               ? "text-secondary border-b-2 border-secondary"
               : ""
           }
-          onClick={() => handleChangePage(pageTypes.ABOUT)}
         >
           Sobre mim
         </Link>
@@ -50,10 +46,8 @@ export function HeaderNav() {
           isActive ? "flex" : "hidden"
         } flex-col gap-6 absolute h-screen w-[80vw] top-0 right-0 bg-white p-6 shadow-md`}
       >
-        <button 
-          onClick={toggleMenu}
-          className="self-end">
-          <X className="text-2xl" />
+        <button onClick={toggleMenu} className="self-end">
+          <FiX className="text-2xl" />
         </button>
 
         <div className="flex flex-col gap-6">
@@ -61,10 +55,9 @@ export function HeaderNav() {
             href="/"
             className={
               page === pageTypes.HOME
-                ? "text-secondary border-b-2 border-secondary inline"
+                ? "text-secondary border-b-2 border-secondary max-w-fit"
                 : ""
             }
-            onClick={() => handleChangePage(pageTypes.HOME)}
           >
             Home
           </Link>
@@ -72,10 +65,9 @@ export function HeaderNav() {
             href="/about"
             className={
               page === pageTypes.ABOUT
-                ? "text-secondary border-b-2 border-secondary inline"
+                ? "text-secondary border-b-2 border-secondary max-w-fit"
                 : ""
             }
-            onClick={() => handleChangePage(pageTypes.ABOUT)}
           >
             Sobre mim
           </Link>
