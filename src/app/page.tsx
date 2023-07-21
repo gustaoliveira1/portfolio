@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
@@ -6,9 +6,9 @@ import { useCurrentPage } from "@/hooks/useCurrentPage";
 import { pageTypes } from "@/types/pagesTypes";
 
 export default function Home() {
-  const { setPage } = useCurrentPage()
+  const { setPage } = useCurrentPage();
 
-  setPage(pageTypes.HOME)
+  setPage(pageTypes.HOME);
 
   return (
     <main>
