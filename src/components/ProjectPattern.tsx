@@ -1,7 +1,9 @@
 import Image, { StaticImageData } from "next/image";
+import { AiOutlineLink } from "react-icons/ai";
 
 interface ProjectPatternProps {
   title: string;
+  link: string;
   description: string;
   technologies: string[];
   tabletImage: StaticImageData;
@@ -10,6 +12,7 @@ interface ProjectPatternProps {
 
 export function ProjectPattern({
   title,
+  link,
   description,
   technologies,
   smartphoneImage,
@@ -48,9 +51,14 @@ export function ProjectPattern({
         {/*Project texts*/}
       </div>
       <div className="space-y-5 mt-10 max-w-md">
-        <h3 className="uppercase font-semibold text-2xl tracking-tight">
+        <a
+          href={link}
+          target="_blank"
+          className="uppercase font-semibold flex items-center gap-3 text-2xl tracking-tight after:block after:absolute after:w-0 after:h-[3px] relative after:bg-black/70 after:transition-transform hover:after:w-full hover:hover after:bottom-0 hover:after:animate-underline"
+        >
           {title}
-        </h3>
+          <AiOutlineLink />
+        </a>
         <p className="text-black/80">{description}</p>
         <p className=" text-secondary">{technologiesToString()}</p>
       </div>
