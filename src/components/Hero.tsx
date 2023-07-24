@@ -6,7 +6,7 @@ import { HeroPattern } from "./HeroPattern";
 
 export function Hero() {
   return (
-    <motion.section 
+    <motion.section
       initial={{ x: "-100%", opacity: 0 }}
       animate={{ x: "0%", opacity: 1 }}
       transition={{ duration: 0.3 }}

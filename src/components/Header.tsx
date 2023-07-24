@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { HeaderNav } from "./HeaderNav";
 import { LinkSocialIcon } from "./LinkSocialIcon";
@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export function Header() {
   return (
-    <motion.header 
+    <motion.header
       initial={{ y: "-100%", opacity: 0 }}
       animate={{ y: "0%", opacity: 1 }}
       transition={{ duration: 0.3 }}
