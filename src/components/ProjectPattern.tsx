@@ -37,7 +37,7 @@ export function ProjectPattern({
 
   return (
     <motion.div 
-      initial={{ y: "50%", opacity: 0 }}
+      initial={{ y: "10%", opacity: 0 }}
       whileInView={{ y: "0%", opacity: 1 }}
       transition={{ duration: 0.3 }}
       className="mx-0 xm:mx-auto lg:mx-0 mb-10"
