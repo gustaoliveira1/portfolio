@@ -1,3 +1,7 @@
+# [Portfólio]((https://gustaoliveira.vercel.app))
+
+This is my portfolio, created with the intention of showcasing my best work, both as a developer and UX designer, and sharing a bit more about myself with the job market.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
