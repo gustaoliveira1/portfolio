@@ -1,3 +1,6 @@
+"use client"
+
+import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import { AiOutlineLink } from "react-icons/ai";
 
@@ -33,7 +36,12 @@ export function ProjectPattern({
   };
 
   return (
-    <div className="mx-0 xm:mx-auto lg:mx-0 mb-10">
+    <motion.div 
+      initial={{ y: "50%", opacity: 0 }}
+      whileInView={{ y: "0%", opacity: 1 }}
+      transition={{ duration: 0.3 }}
+      className="mx-0 xm:mx-auto lg:mx-0 mb-10"
+    >
       <div className="sm:h-[520px] h-[360px] sm:max-w-[360px] max-w-[240px] relative rounded-2xl bg-tertiary p-1 shadow-md">
         <div className="w-1/5 h-2 bg-tertiary absolute rounded-b-full z-10 top-0 left-1/2 -translate-x-1/2" />
         <Image src={tabletImage} alt="" className="rounded-2xl h-full w-full" />
@@ -62,6 +70,6 @@ export function ProjectPattern({
         <p className="text-black/80">{description}</p>
         <p className=" text-secondary">{technologiesToString()}</p>
       </div>
-    </div>
+    </motion.div>
   );
 }
