@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { FiMenu, FiX } from "react-icons/fi";
 import { pageTypes } from "@/types/pagesTypes";
 import { useCurrentPage } from "@/hooks/useCurrentPage";
@@ -41,7 +42,10 @@ export function HeaderNav() {
         </Link>
       </div>
 
-      <aside
+      <motion.aside
+        initial={{ x: "100%" }}
+        animate={{ x: isActive ? "0%" : "100%" }}
+        transition={{ duration: 0.3 }}
         className={`${
           isActive ? "flex" : "hidden"
         } flex-col gap-6 absolute h-screen w-[80vw] top-0 right-0 bg-white p-6 shadow-md`}
@@ -72,7 +76,7 @@ export function HeaderNav() {
             Sobre mim
           </Link>
         </div>
-      </aside>
+      </motion.aside>
     </nav>
   );
 }
